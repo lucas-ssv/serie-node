@@ -14,4 +14,4 @@ app.get('/', (req, res) => {
 
 require('./app/controllers/index')(app);
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
